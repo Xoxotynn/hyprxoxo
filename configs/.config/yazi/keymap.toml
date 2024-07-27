@@ -1,0 +1,13 @@
+[[manager.prepend_keymap]]
+on = ["p"]
+run = "plugin --sync smart-paste"
+desc = "Paste into the hovered directory or CWD"
+
+[[manager.prepend_keymap]]
+on = ["y"]
+run = [
+  '''
+	shell 'for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list' --confirm
+''',
+  "yank",
+]
