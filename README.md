@@ -187,92 +187,90 @@ Please reboot after the install script completes and takes you to sddm login scr
 
 ## Keybindings
 
-### Windows/Session actions
-|||
-| :--- | :--- |
-| <kbd>Super</kbd> + <kbd>Q</kbd>                                                                          | quit active/focused window                        |
-| <kbd>Alt</kbd> + <kbd>F4</kbd>                                                                           | quit active/focused window                        |
-| <kbd>Super</kbd> + <kbd>Del</kbd>                                                                        | quit hyprland session                             |
-| <kbd>Super</kbd> + <kbd>W</kbd>                                                                          | toggle window on focus to float                   |
-| <kbd>Super</kbd> + <kbd>J</kbd>                                                                          | toggle layout                                     |
-| <kbd>Super</kbd> + <kbd>G</kbd>                                                                          | toggle window group                               |
-| <kbd>Alt</kbd> + <kbd>Enter</kbd>                                                                        | toggle window on focus to fullscreen              |
-| <kbd>Super</kbd> + <kbd>L</kbd>                                                                          | lock screen                                       |
-| <kbd>Super</kbd> + <kbd>Backspace</kbd>                                                                  | logout menu                                       |
+### <code>Windows/Session actions</code>
+<table>
+    <tr><td><kbd>Super</kbd> + <kbd>Q</kbd></td><td>quit active/focused window</td></tr>
+    <tr><td><kbd>Alt</kbd> + <kbd>F4</kbd></td><td>quit active/focused window</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>Del</kbd></td><td>quit hyprland session</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>W</kbd></td><td>toggle window on focus to float</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>J</kbd></td><td>toggle layout</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>G</kbd></td><td>toggle window group</td></tr>
+    <tr><td><kbd>Alt</kbd> + <kbd>Enter</kbd></td><td>toggle window on focus to fullscreen</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>L</kbd></td><td>lock screen</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>Backspace</kbd></td><td>logout menu</td></tr>
+</table>
 
-### Apps
-|||
-| :--- | :--- |
-| <kbd>Super</kbd> + <kbd>T</kbd>                                                                          | launch alacritty terminal                         |
-| <kbd>Super</kbd> + <kbd>E</kbd>                                                                          | launch yazi file manager                          |
-| <kbd>Super</kbd> + <kbd>C</kbd>                                                                          | launch vscode                                     |
-| <kbd>Super</kbd> + <kbd>F</kbd>                                                                          | launch firefox browser                            |
+### <code>Apps</code>
+<table>
+    <tr><td><kbd>Super</kbd> + <kbd>T</kbd></td><td>launch alacritty terminal</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>E</kbd></td><td>launch yazi file manager</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>C</kbd></td><td>launch vscode</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>F</kbd></td><td>launch firefox browser</td></tr>
+</table>
 
-### Rofi
-|||
-| :--- | :--- |
-| <kbd>Super</kbd> + <kbd>A</kbd>                                                                          | launch desktop applications                       |
-| <kbd>Super</kbd> + <kbd>Tab</kbd>                                                                        | switch between opened applications                |
-| <kbd>Super</kbd> + <kbd>R</kbd>                                                                          | browse system files                               |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd>                                                       | launch steam games                                |
+### <code>Rofi</code>
+<table>
+    <tr><td><kbd>Super</kbd> + <kbd>A</kbd></td><td>launch desktop applications</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>Tab</kbd></td><td>switch between opened applications</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>R</kbd></td><td>browse system files</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd></td><td>launch steam games</td></tr>
+</table>
 
-### Audio control
-|||
-| :--- | :--- |
-| <kbd>F10</kbd>                                                                                           | mute audio output (toggle)                        |
-| <kbd>F11</kbd>                                                                                           | decrease volume                                   |
-| <kbd>F12</kbd>                                                                                           | increase volume                                   |
+### <code>Audio control</code>
+<table>
+    <tr><td><kbd>F10</kbd></td><td>mute audio output (toggle)</td></tr>
+    <tr><td><kbd>F11</kbd></td><td>decrease volume</td></tr>
+    <tr><td><kbd>F12</kbd></td><td>increase volume</td></tr>
+</table>
 
-### Screen capturing
-|||
-| :--- | :--- |
-| <kbd>Super</kbd> + <kbd>P</kbd>                                                                          | drag to select area / click on a window to print |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd>                                                         | print focused screen                              |
+### <code>Screen capturing</code>
+<table>
+    <tr><td><kbd>Super</kbd> + <kbd>P</kbd></td><td>drag to select area / click on a window to print</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd></td><td>print focused screen</td></tr>
+</table>
 
-### Custom scripts
-|||
-| :--- | :--- |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd>                                                         | disable hypr effects for gamemode                 |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd>                                                         | next wallpaper                                    |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd>                                                         | previous wallpaper                                |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd>                                                         | next waybar mode                                  |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>↓</kbd>                                                         | previous waybar mode                              |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>                                                       | toggle (theme <//> wall) based colors             |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>                                                       | theme select menu                                 |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd>                                                       | rofi style select menu                            |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>W</kbd>                                                       | wallpaper select menu                             |
-| <kbd>Super</kbd> + <kbd>V</kbd>                                                                          | clipboard history paste                           |
+### <code>Custom scripts</code>
+<table>
+    <tr><td><kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd></td><td>disable hypr effects for gamemode</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd><kbd>→</kbd></td><td>previous / next wallpaper</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>↓</kbd><kbd>↑</kbd></td><td>previous / next waybar mode</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd></td><td>toggle (theme <//> wall) based colors</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd></td><td>theme select menu</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd></td><td>rofi style select menu</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>W</kbd></td><td>wallpaper select menu</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>V</kbd></td><td>clipboard history paste</td></tr>
+</table>
 
-### Move focus
-|||
-| :--- | :--- |
-| <kbd>Super</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd>                                      | move focus                                        |
-| <kbd>Alt</kbd> + <kbd>Tab</kbd>                                                                          | move focus (down)                                 |
+### <code>Move focus</code>
+<table>
+    <tr><td><kbd>Super</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd></td><td>move focus</td></tr>
+    <tr><td><kbd>Alt</kbd> + <kbd>Tab</kbd></td><td>move focus (down)</td></tr>
+</table>
 
-### Switch workspaces
-|||
-| :--- | :--- |
-| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>←</kbd><kbd>→</kbd>                                            | switch workspaces relative to the active one      |
-| <kbd>Super</kbd> + <kbd>MouseScroll</kbd>                                                                | cycle through workspaces                          |
-| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>↓</kbd>                                                        | move to first empty workspace                     |
-| <kbd>Super</kbd> + <kbd>[1-5]</kbd>                                                                      | switch to workspace [1-5]                         |
+### <code>Switch workspaces</code>
+<table>
+    <tr><td><kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>←</kbd><kbd>→</kbd></td><td>switch workspaces relative to the active one</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>MouseScroll</kbd></td><td>cycle through workspaces</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>↓</kbd></td><td>move to first empty workspace</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>[1-5]</kbd></td><td>switch to workspace [1-5]</td></tr>
+</table>
 
-### Move windows
-|||
-| :--- | :--- |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd>                   | move active window within the current workspace   |
-| <kbd>Super</kbd> + <kbd>LeftClick</kbd>                                                                  | change the window position (drag)                 |
-| <kbd>Super</kbd> + <kbd>RightClick</kbd>                                                                 | resize the window (drag)                          |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>[1-5]</kbd>                                                   | move active window to workspace [1-5]             |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>[1-5]</kbd>                                                     | move active window to workspace [1-5] (silently)  |
+### <code>Move windows</code>
+<table>
+    <tr><td><kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd></td><td>move active window within the current workspace</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>LeftClick</kbd></td><td>change the window position (drag)</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>RightClick</kbd></td><td>resize the window (drag)</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>[1-5]</kbd></td><td>move active window to workspace [1-5]</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>[1-5]</kbd></td><td>move active window to workspace [1-5] (silently)</td></tr>
+</table>
 
-### Special workspace
-|||
-| :--- | :--- |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>                                                         | move window to special workspace                  |
-| <kbd>Super</kbd> + <kbd>S</kbd>                                                                          | toogle to special workspace                       |
+### <code>Special workspace</code>
+<table>
+    <tr><td><kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd></td><td>move window to special workspace</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>S</kbd></td><td>toggle to special workspace</td></tr>
+</table>
 
-### Language
-|||
-| :--- | :--- |
-| <kbd>Ctrl</kbd> + <kbd>Space</kbd>                                                                       | switch keyboard layout                            |
+### <code>Language</code>
+<table>
+    <tr><td><kbd>Ctrl</kbd> + <kbd>Space</kbd></td><td>switch keyboard layout</td></tr>
+</table>
