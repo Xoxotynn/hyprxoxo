@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+# enable persistence mode
+nvidia-smi -pm 1
+# locking gpu clock
+nvidia-smi -lgc 0,1305
