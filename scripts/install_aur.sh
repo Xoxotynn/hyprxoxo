@@ -18,25 +18,25 @@ if pkg_installed yay || pkg_installed paru; then
 fi
 
 # create directory for git packages if it doesn't exist
-if [ -d $HOME/$pkgdir ]; then
-  echo "$HOME/$pkgdir directory exists..."
-  rm -rf $HOME/$pkgdir/$aurhlpr
+if [ -d $GitPkgDir ]; then
+  echo "$GitPkgDir directory exists..."
+  rm -rf $GitPkgDir/$aurhlpr
 else
-  mkdir $HOME/$pkgdir
-  echo -e "[Desktop Entry]\nIcon=default-folder-git" >$HOME/$pkgdir/.directory
-  echo "$HOME/$pkgdir directory created..."
+  mkdir $GitPkgDir
+  echo -e "[Desktop Entry]\nIcon=default-folder-git" >$GitPkgDir/.directory
+  echo "$GitPkgDir directory created..."
 fi
 
 # clone aur helper from aur
 if pkg_installed git; then
-  git clone https://aur.archlinux.org/"$aurhlpr".git $HOME/$pkgdir/$aurhlpr
+  git clone https://aur.archlinux.org/"$aurhlpr".git $GitPkgDir/$aurhlpr
 else
   echo "git dependency is not installed..."
   exit 1
 fi
 
 # install aur helper
-cd $HOME/$pkgdir/$aurhlpr || exit
+cd $GitPkgDir/$aurhlpr || exit
 makepkg ${use_default} -si
 
 # check if aur helper is installed
@@ -53,7 +53,7 @@ $aurhlpr ${use_default} -S "${aurhlpr}-git"
 
 if pkg_installed "${aurhlpr}-git"; then
   echo "${aurhlpr}-git installed"
-  rm -rf $HOME/$pkgdir/$aurhlpr
+  rm -rf $GitPkgDir/$aurhlpr
   $aurhlpr -Rs ${aurhlpr}-debug ${aurhlpr}-git-debug
   exit 0
 else

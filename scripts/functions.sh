@@ -3,6 +3,7 @@
 set -e
 
 CloneDir=$(dirname $(dirname $(realpath $0)))
+GitPkgDir=$HOME/Packages
 
 service_ctl() {
   local ServChk=$1
