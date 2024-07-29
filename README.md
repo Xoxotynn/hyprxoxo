@@ -47,49 +47,40 @@ Please reboot after the install script completes and takes you to sddm login scr
   - [x] Catppuccin-Mocha
   - [x] Catppuccin-Latte
 
-|                                                Catppuccin-Mocha                                                |
-| :------------------------------------------------------------------------------------------------------------: |
-| ![Catppuccin-Mocha#1](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/theme_mocha_1.png) |
-| ![Catppuccin-Mocha#2](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/theme_mocha_2.png) |
+<div align="center"><b>Catppuccin-Mocha</b></div>
+<table>
+    <tr><td><img src="https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/theme_mocha_1.png"></td><td><img src="https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/theme_mocha_2.png"></td></tr>
+</table>
 
-|                                                Catppuccin-Latte                                                |
-| :------------------------------------------------------------------------------------------------------------: |
-| ![Catppuccin-Latte#1](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/theme_latte_1.png) |
-| ![Catppuccin-Latte#2](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/theme_latte_2.png) |
+<div align="center"><b>Catppuccin-Latte</b></div>
+<table>
+    <tr><td><img src="https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/theme_latte_1.png"></td><td><img src="https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/theme_latte_2.png"></td></tr>
+</table>
 
 ## Styles
 
-|                                              Theme Select                                               |
-| :-----------------------------------------------------------------------------------------------------: |
-| ![Theme Select](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/theme_select.png) |
+<div align="center"><b>Rofi Launcher Styles</b></div>
+<table>
+    <tr><td><img src="https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_1.png"></td><td><img src="https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_2.png"></td></tr>
+    <tr><td><img src="https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_3.png"></td><td><img src="https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_4.png"></td></tr>
+    <tr><td><img src="https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_5.png"></td><td><img src="https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_6.png"></td></tr>
+    <tr><td><img src="https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_7.png"></td><td><img src="https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_8.png"></td></tr>
+</table>
 
-|                                              Wallpaper Select                                               |
-| :---------------------------------------------------------------------------------------------------------: |
-| ![Wallpaper Select](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/walls_select.png) |
+<div align="center"><b>Wlogout Menu</b></div>
+<table>
+    <tr><td><img src="https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/wlog_style_1.png"></td><td><img src="https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/wlog_style_2.png"></td></tr>
+</table>
 
-|                                               Launcher Style Select                                                |
-| :----------------------------------------------------------------------------------------------------------------: |
-| ![Launcher Style Select](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_sel.png) |
+| Selection      |                                              Screenshot                                                             |
+| :--------------| :-----------------------------------------------------------------------------------------------------------------: |
+| Theme          | ![Theme Select](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/theme_select.png)            |
+| Wallpaper      | ![Wallpaper Select](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/walls_select.png)        |
+| Launcher Style | ![Launcher Style Select](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_sel.png) |
 
-|                                             Launcher Styles                                             |
-| :-----------------------------------------------------------------------------------------------------: |
-| ![rofi style#1](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_1.png) |
-| ![rofi style#2](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_2.png) |
-| ![rofi style#3](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_3.png) |
-| ![rofi style#4](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_4.png) |
-| ![rofi style#5](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_5.png) |
-| ![rofi style#6](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_6.png) |
-| ![rofi style#7](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_7.png) |
-| ![rofi style#8](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/rofi_style_8.png) |
-
-|                                               Wlogout Menu                                                |
-| :-------------------------------------------------------------------------------------------------------: |
-| ![Wlogout Menu#1](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/wlog_style_1.png) |
-| ![Wlogout Menu#2](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/wlog_style_2.png) |
-
-|                                                Game Launchers                                                |
+|                                                Game Launcher                                                 |
 | :----------------------------------------------------------------------------------------------------------: |
-| ![Game Launcher](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/game_launch.png) |
+| ![Game Launcher](https://raw.githubusercontent.com/Xoxotynn/hyprxoxo/main/source/assets/game_launch.png)     |
 
 ## Packages
 
