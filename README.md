@@ -93,15 +93,15 @@ Please reboot after the install script completes and takes you to sddm login scr
 
 ## Packages
 
+### <code>nvidia</code>
 <table>
-    <caption><code><b>nvidia</b></code></caption>
     <tr><td>linux-[zen|lts]-headers</td><td>for main kernel (script will auto detect from /usr/lib/modules/)</td></tr>
     <tr><td>nvidia-dkms</td><td>nvidia drivers (script will auto detect from lspci -k | grep -A 2 -E "(VGA|3D)")</td></tr>
     <tr><td>nvidia-utils</td><td>nvidia utils (script will auto detect from lspci -k | grep -A 2 -E "(VGA|3D)")</td></tr>
 </table>
-<br />
+
+### <code>utils</code>
 <table>
-    <caption><code><b>utils</b></code></caption>
     <tr><td>pipewire</td><td>audio and video server</td></tr>
     <tr><td>pipewire-alsa</td><td>for audio</td></tr>
     <tr><td>pipewire-audio</td><td>for audio</td></tr>
@@ -114,16 +114,16 @@ Please reboot after the install script completes and takes you to sddm login scr
     <tr><td>bluez-utils</td><td>for bluetooth</td></tr>
     <tr><td>blueman</td><td>bt tray</td></tr>
 </table>
-<br />
+
+### <code>login</code>
 <table>
-    <caption><code><b>login</b></code></caption>
     <tr><td>sddm-git</td><td>display manager for login</td></tr>
     <tr><td>qt6-wayland</td><td>for QT wayland XDP</td></tr>
     <tr><td>qt6-5compat</td><td>for sddm theme</td></tr>
 </table>
-<br />
+
+### <code>hypr</code>
 <table>
-    <caption><code><b>hypr</b></code></caption>
     <tr><td>hyprland-git</td><td>main window manager</td></tr>
     <tr><td>hyprshade</td><td>screen shader tool(for bluelight filter)</td></tr>
     <tr><td>dunst</td><td>graphical notification daemon</td></tr>
@@ -137,9 +137,9 @@ Please reboot after the install script completes and takes you to sddm login scr
     <tr><td>swappy</td><td>screenshot editor</td></tr>
     <tr><td>cliphist</td><td>clipboard manager</td></tr>
 </table>
-<br />
+
+### <code>dependency</code>
 <table>
-    <caption><code><b>dependency</b></code></caption>
     <tr><td>polkit-kde-agent</td><td>authentication agent</td></tr>
     <tr><td>xdg-desktop-portal-hyprland</td><td>XDG Desktop Portal</td></tr>
     <tr><td>pacman-contrib</td><td>for system update check</td></tr>
@@ -153,16 +153,16 @@ Please reboot after the install script completes and takes you to sddm login scr
     <tr><td>fcitx5-gtk</td><td>for input method</td></tr>
     <tr><td>fcitx5-configtool</td><td>for input method</td></tr>
 </table>
-<br />
+
+### <code>theme</code>
 <table>
-    <caption><code><b>theme</b></code></caption>
     <tr><td>nwg-look</td><td>theming GTK apps</td></tr>
     <tr><td>kvantum</td><td>theming QT apps</td></tr>
     <tr><td>qt6ct</td><td>theming QT6 apps</td></tr>
 </table>
-<br />
+
+### <code>apps</code>
 <table>
-    <caption><code><b>apps</b></code></caption>
     <tr><td>firefox</td><td>browser</td></tr>
     <tr><td>discord</td><td>communication</td></tr>
     <tr><td>telegram-desktop</td><td>messenger</td></tr>
@@ -177,9 +177,9 @@ Please reboot after the install script completes and takes you to sddm login scr
     <tr><td>qbittorrent</td><td>torrent tracker</td></tr>
     <tr><td>steam</td><td>steam launcher and runtime</td></tr>
 </table>
-<br />
+
+### <code>shell</code>
 <table>
-    <caption><code><b>shell</b></code></caption>
     <tr><td>zsh</td><td>main shell</td></tr>
     <tr><td>lsd</td><td>colorful file lister</td></tr>
     <tr><td>fzf</td><td>command line fuzzy finder</td></tr>
