@@ -38,14 +38,15 @@ slurp
 swappy
 cliphist
 pacman-contrib
-yay-git
 parallel
 jq
 imagemagick
-ffmpegthumbs
+ffmpeg
+ffmpegthumbnailer
 pavucontrol
 pamixer
-nwg-lookalacritty-git
+nwg-look
+alacritty-git
 kvantum
 firefox
 neofetch
@@ -57,7 +58,6 @@ neovim
 zsh
 lsd
 fzf
-git
 notion-app-electron
 p7zip
 qbittorrent
