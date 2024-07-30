@@ -147,6 +147,8 @@ if [ $flg_Service -eq 1 ]; then
 
 EOF
 
+  ./scripts/install_services.sh
+
   while read -r service; do
     service_ctl "$service"
   done <./lists/system_ctl.lst
