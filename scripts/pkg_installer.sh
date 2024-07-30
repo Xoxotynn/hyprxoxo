@@ -40,8 +40,8 @@ if ! pkg_installed git; then
 fi
 
 # enable multilib
-sudo sed -i -e 's/\#\[multilib\]/[multilib]/
-                s/\#Include\ =\ \/etc\/pacman\.d\/mirrorlist/Include = \/etc\/pacman.d\/mirrorlist/' /etc/pacman.conf
+sudo sed -i -e 's/\#\[multilib\]/[multilib]/g' /etc/pacman.conf
+sudo sed -i -e '/\[multilib\]/!b; n; s/^.*$/Include = \/etc\/pacman.d\/mirrorlist/g' /etc/pacman.conf
 sudo pacman -Syu
 
 # find out which aur helper is installed and set it to aurhlpr
