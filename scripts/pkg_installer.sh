@@ -9,6 +9,18 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
+# check if base-devel is installed
+if ! pkg_installed base-devel; then
+  echo "installing dependency base-devel..."
+  sudo pacman -S base-devel
+fi
+
+# check if make is installed
+if ! pkg_installed make; then
+  echo "installing dependency make..."
+  sudo pacman -S make
+fi
+
 # check if debugedit is installed
 if ! pkg_installed debugedit; then
   echo "installing dependency debugedit..."
