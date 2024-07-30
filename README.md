@@ -25,8 +25,8 @@ After minimal Arch install (with grub), clone and execute -
 
 ```shell
 pacman -Sy git
-git clone https://github.com/klpod221/klpod0s.git
-cd ./klpod0s
+git clone https://github.com/Xoxotynn/hyprxoxo.git
+cd ./hyprxoxo
 ./install.sh
 ```
 
