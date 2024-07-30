@@ -32,7 +32,7 @@ if ! pkg_installed wine-tkg-staging-git; then
   sed -i -e 's/^_GCC_FLAGS=\"/_GCC_FLAGS="-march=native\ /
              s/^_CROSS_FLAGS=\"/_CROSS_FLAGS=\"-march=native\ /' $GitPkgDir/wine-tkg-git/wine-tkg-git/wine-tkg-profiles/advanced-customization.cfg
   cd $GitPkgDir/wine-tkg-git/wine-tkg-git
-  makepkg -sric
+  makepkg -si
 else
   echo "wine-tkg already installed, skipping"
 fi
@@ -52,7 +52,7 @@ if ! pkg_installed dxvk-mingw; then
   git clone https://github.com/loathingKernel/PKGBUILDs $GitPkgDir/PKGBUILDs/
   sed -i -e 's/-O3 -march=haswell -mtune=haswell -pipe/-O2 -march=native -mtune=native -pipe/g' $GitPkgDir/PKGBUILDs/public/dxvk-mingw/PKGBUILD
   cd $GitPkgDir/PKGBUILDs/public/dxvk-mingw
-  makepkg -sric
+  makepkg -si
 else
   echo "dxvk-mingw already installed, skipping"
 fi
@@ -73,7 +73,7 @@ if ! pkg_installed vkd3d-proton-mingw; then
   git clone https://aur.archlinux.org/vkd3d-proton-mingw.git $GitPkgDir/vkd3d-proton-mingw/
   sed -i 's/-O3 -march=nocona -mtune=core-avx2 -pipe/-O2 -march=native -mtune=native -pipe/g' $GitPkgDir/vkd3d-proton-mingw/PKGBUILD
   cd $GitPkgDir/vkd3d-proton-mingw
-  makepkg -sric
+  makepkg -si
 else
   echo "vkd3d-proton-mingw already installed, skipping"
 fi
