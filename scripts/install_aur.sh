@@ -37,7 +37,7 @@ fi
 
 # install aur helper
 cd $GitPkgDir/$aurhlpr || exit
-makepkg ${use_default} -si
+makepkg ${use_default} -sric
 
 # check if aur helper is installed
 if [ $? -eq 0 ]; then
@@ -48,7 +48,9 @@ else
 fi
 
 echo "installing ${aurhlpr}-git..."
-sudo rm /usr/lib/debug/usr/bin/yay.debug
+if [ -f /usr/lib/debug/usr/bin/yay.debug ]; then
+  sudo rm /usr/lib/debug/usr/bin/yay.debug
+fi
 $aurhlpr ${use_default} -S "${aurhlpr}-git"
 
 if pkg_installed "${aurhlpr}-git"; then

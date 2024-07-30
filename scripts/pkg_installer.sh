@@ -9,6 +9,18 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
+# check if debugedit is installed
+if ! pkg_installed debugedit; then
+  echo "installing dependency debugedit..."
+  sudo pacman -S debugedit
+fi
+
+# check if fakeroot is installed
+if ! pkg_installed fakeroot; then
+  echo "installing dependency fakeroot..."
+  sudo pacman -S fakeroot
+fi
+
 # check if git is installed
 if ! pkg_installed git; then
   echo "installing dependency git..."
@@ -19,16 +31,16 @@ fi
 chk_aurh
 
 if [ -z "$aurhlpr" ]; then
-  echo -e "Select aur helper to install packages:\n1) yay-git\n2) paru-git"
+  echo -e "Select aur helper to install packages:\n1) yay\n2) paru"
   read -r -p "Enter number: " aurhlpr
 
   case $aurhlpr in
-  1) aurhlpr="yay-git" ;;
-  2) aurhlpr="paru-git" ;;
+  1) aurhlpr="yay" ;;
+  2) aurhlpr="paru" ;;
   *) echo "invalid option, exiting..." && exit 1 ;;
   esac
 
-  echo "installing dependency $aurhlpr-git..."
+  echo "installing dependency $aurhlpr..."
   ./scripts/install_aur.sh "$aurhlpr" 2>&1
 fi
 
