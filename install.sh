@@ -83,16 +83,8 @@ EOF
   #--------------------------------#
   # add nvidia drivers to the list #
   #--------------------------------#
-  if nvidia_detect; then
-    echo "nvidia detected, adding nvidia driver to the install list..."
-    cat /usr/lib/modules/*/pkgbase | while read -r krnl; do
-      echo "${krnl}-headers" >>./lists/install_pkg.lst
-    done
-
-    echo -e "nvidia-dkms\nnvidia-utils\nnvidia-settings" >>./lists/install_pkg.lst
-  else
-    echo "no nvidia detected, skipping nvidia driver..."
-  fi
+  echo "linux-headers" >>./lists/install_pkg.lst
+  echo -e "nvidia-dkms\nnvidia-utils\nnvidia-settings" >>./lists/install_pkg.lst
 
   #--------------------------------#
   # install packages from the list #
