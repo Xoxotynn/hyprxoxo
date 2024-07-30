@@ -50,9 +50,7 @@ WINEPREFIX=$HOME/.wine32 WINEARCH=win32
 if ! pkg_installed dxvk-mingw; then
   rm -rf $GitPkgDir/PKGBUILDs
   git clone https://github.com/loathingKernel/PKGBUILDs $GitPkgDir/PKGBUILDs/
-  sed -i -e 's/patch -p1 -i "$srcdir"\/1582\.patch//g
-             s/patch -p1 -i "$srcdir"\/1582-fix-include\.patch//g
-             s/-O3 -march=haswell -mtune=haswell -pipe/-O2 -march=native -mtune=native -pipe/g' $GitPkgDir/PKGBUILDs/public/dxvk-mingw/PKGBUILD
+  sed -i -e 's/-O3 -march=haswell -mtune=haswell -pipe/-O2 -march=native -mtune=native -pipe/g' $GitPkgDir/PKGBUILDs/public/dxvk-mingw/PKGBUILD
   cd $GitPkgDir/PKGBUILDs/public/dxvk-mingw
   makepkg -sric
 else
