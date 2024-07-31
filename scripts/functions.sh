@@ -41,8 +41,3 @@ aur_available() {
   $aurhlpr -Si "$1" &>/dev/null
   return $?
 }
-
-nvidia_detect() {
-  lspci -k | grep -A 2 -E "(VGA|3D)" | grep -q "NVIDIA"
-  return $?
-}
