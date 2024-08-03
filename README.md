@@ -131,7 +131,7 @@ Please reboot after the install script completes and takes you to sddm login scr
 
 ### <code>dependency</code>
 <table>
-    <tr><td>polkit-kde-agent</td><td>authentication agent</td></tr>
+    <tr><td>xfce-polkit</td><td>authentication agent</td></tr>
     <tr><td>xdg-desktop-portal-hyprland</td><td>XDG Desktop Portal</td></tr>
     <tr><td>pacman-contrib</td><td>for system update check</td></tr>
     <tr><td>parallel</td><td>for parallel processing</td></tr>

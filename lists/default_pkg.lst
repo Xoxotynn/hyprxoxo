@@ -26,7 +26,7 @@ fcitx5
 fcitx5-qt
 fcitx5-gtk
 fcitx5-configtool
-polkit-kde-agent
+xfce-polkit
 xdg-desktop-portal-hyprland
 sddm-git
 hyprland-git
