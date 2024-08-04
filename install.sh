@@ -117,6 +117,9 @@ EOF
 
   # install wine, dxvk and vkd3d
   ./scripts/install_wine.sh
+
+  # install amnezia vpn client
+  ./scripts/install_amneziavpn.sh
 fi
 
 #---------------------------#
