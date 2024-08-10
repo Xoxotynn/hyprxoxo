@@ -74,3 +74,21 @@ if pkg_installed zsh; then
 else
   echo "WARNING: zsh is not installed..."
 fi
+
+# dnscrypt-proxy
+if pkg_installed dnscrypt-proxy; then
+  sudo systemctl stop systemd-resolved.service
+  sudo systemctl disable systemd-resolved.service
+
+  sudo cp /etc/resolv.conf /etc/resolv.conf.backup
+  sudo rm /etc/resolv.conf
+
+  echo 'nameserver ::1
+nameserver 127.0.0.1
+options edns0' | sudo tee /etc/resolv.conf
+
+  sudo systemctl enable dnscrypt-proxy.service
+  sudo systemctl start dnscrypt-proxy.service
+else
+  echo "WARNING: dnscrypt-proxy is not installed..."
+fi

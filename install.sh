@@ -122,9 +122,9 @@ EOF
   ./scripts/install_amneziavpn.sh
 fi
 
-#---------------------------#
-# update sddm, grub and zsh #
-#---------------------------#
+#-------------------------------------------#
+# update sddm, grub, zsh and dnscrypt-proxy #
+#-------------------------------------------#
 if [ $flg_Install -eq 1 ] && [ $flg_Ricing -eq 1 ]; then
   ./scripts/install_etc.sh
 fi

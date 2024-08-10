@@ -104,6 +104,7 @@ Please reboot after the install script completes and takes you to sddm login scr
     <tr><td>bluez</td><td>for bluetooth</td></tr>
     <tr><td>bluez-utils</td><td>for bluetooth</td></tr>
     <tr><td>blueman</td><td>bt tray</td></tr>
+    <tr><td>dnscrypt-proxy</td><td>encrypting/proxying dns requests</td></tr>
 </table>
 
 ### <code>login</code>
