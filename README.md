@@ -162,7 +162,7 @@ Please reboot after the install script completes and takes you to sddm login scr
     <tr><td>btop</td><td>system monitor</td></tr>
     <tr><td>yazi</td><td>file manager</td></tr>
     <tr><td>visual-studio-code-bin</td><td>gui code editor</td></tr>
-    <tr><td>neovim</td><td>text editor</td></tr>
+    <tr><td>vim</td><td>text editor</td></tr>
     <tr><td>notion-app-electron</td><td>notes</td></tr>
     <tr><td>p7zip</td><td>file archiver</td></tr>
     <tr><td>qbittorrent</td><td>torrent tracker</td></tr>
