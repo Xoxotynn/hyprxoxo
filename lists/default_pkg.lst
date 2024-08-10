@@ -47,6 +47,11 @@ jq
 imagemagick
 ffmpeg
 ffmpegthumbnailer
+poppler
+poppler-data
+zoxide
+ripgrep
+fd
 pavucontrol
 pamixer
 nwg-look

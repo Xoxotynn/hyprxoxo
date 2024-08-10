@@ -137,6 +137,11 @@ Please reboot after the install script completes and takes you to sddm login scr
     <tr><td>parallel</td><td>for parallel processing</td></tr>
     <tr><td>jq</td><td>to read json</td></tr>
     <tr><td>imagemagick</td><td>for image processing</td></tr>
+    <tr><td>poppler</td><td>for PDF preview</td></tr>
+    <tr><td>poppler-data</td><td>for PDF preview</td></tr>
+    <tr><td>zoxide</td><td>yazi directory jumping</td></tr>
+    <tr><td>ripgrep</td><td>yazi file content searching</td></tr>
+    <tr><td>fd</td><td>yazi file searching</td></tr>
     <tr><td>pavucontrol</td><td>audio settings gui</td></tr>
     <tr><td>pamixer</td><td>for waybar audio</td></tr>
     <tr><td>fcitx5</td><td>for input method</td></tr>
