@@ -11,3 +11,13 @@ run = [
 ''',
   "yank",
 ]
+
+[[manager.prepend_keymap]]
+on = ["C"]
+run = "plugin ouch --args=zip"
+desc = "Compress with ouch"
+
+[[manager.prepend_keymap]]
+on   = "<Tab>"
+run  = "plugin --sync max-preview"
+desc = "Maximize or restore preview"

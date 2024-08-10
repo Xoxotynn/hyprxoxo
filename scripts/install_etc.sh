@@ -80,6 +80,10 @@ if pkg_installed dnscrypt-proxy; then
   sudo systemctl stop systemd-resolved.service
   sudo systemctl disable systemd-resolved.service
 
+  echo '[main]
+dns=none
+systemd-resolved=false' | sudo tee /etc/NetworkManager/conf.d/dns.conf
+
   sudo cp /etc/resolv.conf /etc/resolv.conf.backup
   sudo rm /etc/resolv.conf
 
@@ -89,6 +93,8 @@ options edns0' | sudo tee /etc/resolv.conf
 
   sudo systemctl enable dnscrypt-proxy.service
   sudo systemctl start dnscrypt-proxy.service
+
+  sudo systemctl restart NetworkManager.service
 else
   echo "WARNING: dnscrypt-proxy is not installed..."
 fi

@@ -134,21 +134,26 @@ Please reboot after the install script completes and takes you to sddm login scr
 <table>
     <tr><td>xfce-polkit</td><td>authentication agent</td></tr>
     <tr><td>xdg-desktop-portal-hyprland</td><td>XDG Desktop Portal</td></tr>
-    <tr><td>pacman-contrib</td><td>for system update check</td></tr>
-    <tr><td>parallel</td><td>for parallel processing</td></tr>
-    <tr><td>jq</td><td>to read json</td></tr>
-    <tr><td>imagemagick</td><td>for image processing</td></tr>
-    <tr><td>poppler</td><td>for PDF preview</td></tr>
-    <tr><td>poppler-data</td><td>for PDF preview</td></tr>
+    <tr><td>pacman-contrib</td><td>system update check</td></tr>
+    <tr><td>parallel</td><td>parallel processing</td></tr>
+    <tr><td>jq</td><td>read json</td></tr>
+    <tr><td>imagemagick</td><td>image processing</td></tr>
+    <tr><td>ffmpeg</td><td>yazi image preview</td></tr>
+    <tr><td>ffmpegthumbnailer</td><td>yazi image preview</td></tr>
+    <tr><td>ueberzugpp</td><td>yazi image preview</td></tr>
+    <tr><td>mediainfo</td><td>yazi image/video metadata preview</td></tr>
+    <tr><td>perl-image-exiftool</td><td>yazi audio metadata preview</td></tr>
+    <tr><td>ouch</td><td>yazi archive preview</td></tr>
+    <tr><td>miller</td><td>yazi csv preview</td></tr>
     <tr><td>zoxide</td><td>yazi directory jumping</td></tr>
     <tr><td>ripgrep</td><td>yazi file content searching</td></tr>
     <tr><td>fd</td><td>yazi file searching</td></tr>
     <tr><td>pavucontrol</td><td>audio settings gui</td></tr>
-    <tr><td>pamixer</td><td>for waybar audio</td></tr>
-    <tr><td>fcitx5</td><td>for input method</td></tr>
-    <tr><td>fcitx5-qt</td><td>for input method</td></tr>
-    <tr><td>fcitx5-gtk</td><td>for input method</td></tr>
-    <tr><td>fcitx5-configtool</td><td>for input method</td></tr>
+    <tr><td>pamixer</td><td>waybar audio</td></tr>
+    <tr><td>fcitx5</td><td>input method</td></tr>
+    <tr><td>fcitx5-qt</td><td>input method</td></tr>
+    <tr><td>fcitx5-gtk</td><td>input method</td></tr>
+    <tr><td>fcitx5-configtool</td><td>input method</td></tr>
 </table>
 
 ### <code>theme</code>

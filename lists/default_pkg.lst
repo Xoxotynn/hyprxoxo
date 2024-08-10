@@ -47,11 +47,14 @@ jq
 imagemagick
 ffmpeg
 ffmpegthumbnailer
-poppler
-poppler-data
+mediainfo
+perl-image-exiftool
 zoxide
 ripgrep
 fd
+ouch
+miller
+ueberzugpp
 pavucontrol
 pamixer
 nwg-look
