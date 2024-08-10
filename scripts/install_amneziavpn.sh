@@ -14,11 +14,11 @@ fi
 #----------------------------#
 
 # download latest .tar.zip release from github
-curl -s https://api.github.com/repos/amnezia-vpn/amnezia-client/releases/latest \
-| grep '"browser_download_url":.*AmneziaVPN_Linux_.*\.tar\.zip' \
-| awk '{print $2}' \
-| tr -d '"' \
-| wget -i -
+curl -s https://api.github.com/repos/amnezia-vpn/amnezia-client/releases/latest |
+  grep '"browser_download_url":.*AmneziaVPN_Linux_.*\.tar\.zip' |
+  awk '{print $2}' |
+  tr -d '"' |
+  xargs curl -L -O
 
 # extract installer
 7z e $(ls -1 | grep AmneziaVPN)
