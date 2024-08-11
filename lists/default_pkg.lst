@@ -49,6 +49,7 @@ ffmpeg
 ffmpegthumbnailer
 mediainfo
 perl-image-exiftool
+poppler
 zoxide
 ripgrep
 fd

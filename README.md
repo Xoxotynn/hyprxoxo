@@ -151,6 +151,7 @@ QT_QPA_PLATFORM=xcb ./AmneziaVPN_Linux_Installer.bin
     <tr><td>ueberzugpp</td><td>yazi image preview</td></tr>
     <tr><td>mediainfo</td><td>yazi image/video metadata preview</td></tr>
     <tr><td>perl-image-exiftool</td><td>yazi audio metadata preview</td></tr>
+    <tr><td>poppler</td><td>yazi pdf preview</td></tr>
     <tr><td>ouch</td><td>yazi archive preview</td></tr>
     <tr><td>miller</td><td>yazi csv preview</td></tr>
     <tr><td>zoxide</td><td>yazi directory jumping</td></tr>
