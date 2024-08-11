@@ -18,7 +18,7 @@ The installation script is made for Arch, but **may** work on some Arch based di
 
 > **Warning**
 >
-> Install script will auto-detect nvidia card and install nvidia-dkms drivers for your kernel.  
+> Install script will install patched nvidia drivers  
 > Nvidia drm will be enabled in grub, so please [ensure](https://wiki.archlinux.org/title/NVIDIA) your nvidia card supports dkms drivers/hyprland.
 
 After minimal Arch install (with grub), clone and execute -
@@ -39,6 +39,15 @@ cd ./hyprxoxo
 > ```
 
 Please reboot after the install script completes and takes you to sddm login screen (or black screen) for the first time.
+
+#### Apps that need manual installation
+
+After installation finish some apps will be placed into `installers` folders to install it follow next instructions:
+**AmneziaVPN**
+```shell
+cd installers
+QT_QPA_PLATFORM=xcb ./AmneziaVPN_Linux_Installer.bin
+```
 
 ### Theming
 
