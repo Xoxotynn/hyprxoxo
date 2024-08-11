@@ -47,6 +47,7 @@ sudo pacman -Syu
 # find out which aur helper is installed and set it to aurhlpr
 chk_aurh
 
+# install aur helper
 if [ -z "$aurhlpr" ]; then
   echo -e "Select aur helper to install packages:\n1) yay\n2) paru"
   read -r -p "Enter number: " aurhlpr
@@ -59,6 +60,16 @@ if [ -z "$aurhlpr" ]; then
 
   echo "installing dependency $aurhlpr..."
   ./scripts/install_aur.sh "$aurhlpr" 2>&1
+fi
+
+# install nvidia drivers
+if ! pkg_installed nvidia-open-dkms-tkg; then
+  rm -rf $GitPkgDir/nvidia-all
+  git clone https://github.com/Frogging-Family/nvidia-all.git $GitPkgDir/nvidia-all/
+  cd $GitPkgDir/nvidia-all
+  makepkg -si
+else
+  echo "nvidia-all already installed, skipping"
 fi
 
 # install packages from install_pkg.lst

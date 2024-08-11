@@ -87,8 +87,7 @@ Please reboot after the install script completes and takes you to sddm login scr
 ### <code>nvidia</code>
 <table>
     <tr><td>linux-[zen|lts]-headers</td><td>for main kernel (script will auto detect from /usr/lib/modules/)</td></tr>
-    <tr><td>nvidia-dkms</td><td>nvidia drivers (script will auto detect from lspci -k | grep -A 2 -E "(VGA|3D)")</td></tr>
-    <tr><td>nvidia-utils</td><td>nvidia utils (script will auto detect from lspci -k | grep -A 2 -E "(VGA|3D)")</td></tr>
+    <tr><td>nvidia-all</td><td>nvidia drivers</td></tr>
 </table>
 
 ### <code>utils</code>
