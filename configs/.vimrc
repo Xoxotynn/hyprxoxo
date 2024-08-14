@@ -42,3 +42,5 @@ set path+=**
 "show all matching files when tab complete"
 set wildmenu
 
+"yank to clipboard"
+set clipboard=unnamedplus
