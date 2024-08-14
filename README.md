@@ -113,6 +113,8 @@ QT_QPA_PLATFORM=xcb ./AmneziaVPN_Linux_Installer.bin
     <tr><td>bluez-utils</td><td>for bluetooth</td></tr>
     <tr><td>blueman</td><td>bt tray</td></tr>
     <tr><td>dnscrypt-proxy</td><td>encrypting/proxying dns requests</td></tr>
+    <tr><td>imv</td><td>image viewer</td></tr>
+    <tr><td>vlc</td><td>media player</td></tr>
 </table>
 
 ### <code>login</code>
