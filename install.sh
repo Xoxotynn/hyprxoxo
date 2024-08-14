@@ -81,12 +81,6 @@ EOF
   fi
 
   #--------------------------------#
-  # add nvidia drivers to the list #
-  #--------------------------------#
-  echo "linux-headers" >>./lists/install_pkg.lst
-  echo -e "nvidia-dkms\nnvidia-utils\nnvidia-settings" >>./lists/install_pkg.lst
-
-  #--------------------------------#
   # install packages from the list #
   #--------------------------------#
   ./scripts/pkg_installer.sh ./lists/install_pkg.lst 2>&1

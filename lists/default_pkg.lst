@@ -1,3 +1,4 @@
+linux-headers
 pipewire
 pipewire-alsa
 pipewire-audio
@@ -57,7 +58,6 @@ ouch
 miller
 ueberzugpp
 imv
-vlc
 pavucontrol
 pamixer
 nwg-look

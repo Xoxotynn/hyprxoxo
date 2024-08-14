@@ -87,15 +87,8 @@ fi
 # code
 # sed -i "/workbench.colorTheme/c\    \"workbench.colorTheme\": \"${ThemeSet}\"," $ConfDir/Code/User/settings.json
 
-
-# kitty
-ln -fs $ConfDir/kitty/themes/${ThemeSet}.conf $ConfDir/kitty/themes/theme.conf
-killall -SIGUSR1 kitty
-
-
 # kvantum QT
 kvantummanager --set "${ThemeSet}"
-
 
 # qt5ct
 sed -i "/^color_scheme_path=/c\color_scheme_path=$ConfDir/qt5ct/colors/${ThemeSet}.conf" $ConfDir/qt5ct/qt5ct.conf
@@ -106,12 +99,6 @@ sed -i "/^icon_theme=/c\icon_theme=${IconSet}" $ConfDir/qt5ct/qt5ct.conf
 # gtk3
 sed -i "/^gtk-theme-name=/c\gtk-theme-name=${ThemeSet}" $ConfDir/gtk-3.0/settings.ini
 sed -i "/^gtk-icon-theme-name=/c\gtk-icon-theme-name=${IconSet}" $ConfDir/gtk-3.0/settings.ini
-
-
-# flatpak GTK
-flatpak --user override --env=GTK_THEME="${ThemeSet}"
-flatpak --user override --env=ICON_THEME="${IconSet}"
-
 
 # hyprland
 ln -fs $ConfDir/hypr/themes/${ThemeSet}.conf $ConfDir/hypr/themes/theme.conf

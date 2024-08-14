@@ -34,26 +34,6 @@ tooltip {
     transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
-#workspaces button.active {
-    background: @wb-act-bg;
-    color: @wb-act-fg;
-    margin-left: ${w_margin}px;
-    padding-left: ${w_padact}px;
-    padding-right: ${w_padact}px;
-    margin-right: ${w_margin}px;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
-}
-
-#workspaces button:hover {
-    background: @wb-hvr-bg;
-    color: @wb-hvr-fg;
-    padding-left: ${w_paddin}px;
-    padding-right: ${w_paddin}px;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
-}
-
 #taskbar button {
     box-shadow: none;
 	text-shadow: none;
@@ -103,12 +83,6 @@ ${modules_ls}
     padding-right: ${g_paddin}px;
 }
 
-
-#idle_inhibitor {
-    padding-right: 5px;
-}
-
-#workspaces,
 #taskbar {
     padding: 0px;
 }
