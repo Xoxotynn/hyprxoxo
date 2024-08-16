@@ -31,8 +31,8 @@ vim = [
 7z = [
   { run = 'file=$1; 7z -o${file%\.*} e ${file}', desc = "Extract here", for = "linux" },
 ]
-vlc = [
-  { run = 'vlc "$@"', orphan = true, for = "linux" },
+glide = [
+  { run = 'yandex-browser-stable "$@"', orphan = true, for = "linux" },
 ]
 imv = [
   { run = 'imv "$@"', orphan = true, for = "linux" }
@@ -47,7 +47,7 @@ xdg = [
 [open]
 rules = [  
   { mime = "image/*", use = ["imv", "swappy", "xdg"] },
-  { mime = "{audio,video}/*", use = ["vlc", "xdg"] },
+  { mime = "{audio,video}/*", use = ["media", "xdg"] },
   { mime = "application/*zip", use = ["7z", "xdg"] },
   { mime = "application/x-{tar,bzip*,7z-compressed,xz,rar}", use = ["7z", "xdg"] },
   { mime = "text/*", use = ["vim", "xdg"] },
