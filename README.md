@@ -146,19 +146,7 @@ QT_QPA_PLATFORM=xcb ./AmneziaVPN_Linux_Installer.bin
     <tr><td>pacman-contrib</td><td>system update check</td></tr>
     <tr><td>parallel</td><td>parallel processing</td></tr>
     <tr><td>jq</td><td>read json</td></tr>
-    <tr><td>imagemagick</td><td>image processing</td></tr>
-    <tr><td>ffmpeg</td><td>yazi image preview</td></tr>
-    <tr><td>ffmpegthumbnailer</td><td>yazi image preview</td></tr>
-    <tr><td>ueberzugpp</td><td>yazi image preview</td></tr>
-    <tr><td>mediainfo</td><td>yazi image/video metadata preview</td></tr>
-    <tr><td>perl-image-exiftool</td><td>yazi audio metadata preview</td></tr>
-    <tr><td>poppler</td><td>yazi pdf preview</td></tr>
-    <tr><td>ouch</td><td>yazi archive preview</td></tr>
-    <tr><td>miller</td><td>yazi csv preview</td></tr>
-    <tr><td>zoxide</td><td>yazi directory jumping</td></tr>
-    <tr><td>ripgrep</td><td>yazi file content searching</td></tr>
-    <tr><td>fd</td><td>yazi file searching</td></tr>
-    <tr><td>pavucontrol</td><td>audio settings gui</td></tr>
+    <tr><td>ffmpeg</td><td>image processing</td></tr>
     <tr><td>pamixer</td><td>waybar audio</td></tr>
     <tr><td>fcitx5</td><td>input method</td></tr>
     <tr><td>fcitx5-qt</td><td>input method</td></tr>
@@ -181,7 +169,6 @@ QT_QPA_PLATFORM=xcb ./AmneziaVPN_Linux_Installer.bin
     <tr><td>alacritty</td><td>terminal</td></tr>
     <tr><td>neofetch</td><td>fetch tool</td></tr>
     <tr><td>btop</td><td>system monitor</td></tr>
-    <tr><td>yazi</td><td>file manager</td></tr>
     <tr><td>visual-studio-code-bin</td><td>gui code editor</td></tr>
     <tr><td>vim</td><td>text editor</td></tr>
     <tr><td>notion-app-electron</td><td>notes</td></tr>
@@ -215,7 +202,6 @@ QT_QPA_PLATFORM=xcb ./AmneziaVPN_Linux_Installer.bin
 ### <code>Apps</code>
 <table>
     <tr><td><kbd>Super</kbd> + <kbd>T</kbd></td><td>launch alacritty terminal</td></tr>
-    <tr><td><kbd>Super</kbd> + <kbd>E</kbd></td><td>launch yazi file manager</td></tr>
     <tr><td><kbd>Super</kbd> + <kbd>C</kbd></td><td>launch vscode</td></tr>
     <tr><td><kbd>Super</kbd> + <kbd>F</kbd></td><td>launch firefox browser</td></tr>
 </table>
