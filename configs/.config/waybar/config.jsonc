@@ -31,10 +31,7 @@
 		"on-click-middle": "close",
 		"ignore-list": [
 			"Alacritty"
-		],
-		"app_ids-mapping": {
-			"firefoxdeveloperedition": "firefox-developer-edition"
-		}
+		]
 	},
 
     "mpris": {
@@ -47,10 +44,9 @@
         "status-icons": {
             "paused": "⏸"
         },
-        //"ignored-players": ["firefox"],
-	"title-len": 30,
-	"artist-len": 20,
-	"dynamic-len": 70
+	    "title-len": 30,
+	    "artist-len": 20,
+	    "dynamic-len": 70
     },
 
     "clock": {

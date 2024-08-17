@@ -130,7 +130,7 @@ QT_QPA_PLATFORM=xcb ./AmneziaVPN_Linux_Installer.bin
     <tr><td>dunst</td><td>graphical notification daemon</td></tr>
     <tr><td>rofi-lbonn-wayland-git</td><td>app launcher</td></tr>
     <tr><td>waybar</td><td>status bar</td></tr>
-    <tr><td>swww</td><td>wallpaper app</td></tr>
+    <tr><td>hyprpaper</td><td>wallpaper app</td></tr>
     <tr><td>swaylock-effects-git</td><td>lockscreen</td></tr>
     <tr><td>wlogout</td><td>logout screen</td></tr>
     <tr><td>grimblast-git</td><td>screenshot tool</td></tr>
@@ -146,6 +146,7 @@ QT_QPA_PLATFORM=xcb ./AmneziaVPN_Linux_Installer.bin
     <tr><td>pacman-contrib</td><td>system update check</td></tr>
     <tr><td>parallel</td><td>parallel processing</td></tr>
     <tr><td>jq</td><td>read json</td></tr>
+    <tr><td>imagemagick</td><td>image processing</td></tr>
     <tr><td>ffmpeg</td><td>image processing</td></tr>
     <tr><td>pamixer</td><td>waybar audio</td></tr>
     <tr><td>fcitx5</td><td>input method</td></tr>
@@ -163,7 +164,7 @@ QT_QPA_PLATFORM=xcb ./AmneziaVPN_Linux_Installer.bin
 
 ### <code>apps</code>
 <table>
-    <tr><td>firefox</td><td>browser</td></tr>
+    <tr><td>yandex-browser</td><td>browser</td></tr>
     <tr><td>discord</td><td>communication</td></tr>
     <tr><td>telegram-desktop</td><td>messenger</td></tr>
     <tr><td>alacritty</td><td>terminal</td></tr>
@@ -203,7 +204,7 @@ QT_QPA_PLATFORM=xcb ./AmneziaVPN_Linux_Installer.bin
 <table>
     <tr><td><kbd>Super</kbd> + <kbd>T</kbd></td><td>launch alacritty terminal</td></tr>
     <tr><td><kbd>Super</kbd> + <kbd>C</kbd></td><td>launch vscode</td></tr>
-    <tr><td><kbd>Super</kbd> + <kbd>F</kbd></td><td>launch firefox browser</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>Y</kbd></td><td>launch yandex browser</td></tr>
 </table>
 
 ### <code>Rofi</code>

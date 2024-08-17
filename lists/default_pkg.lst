@@ -34,7 +34,7 @@ hyprshade-git
 dunst-git
 rofi-lbonn-wayland-git
 waybar-git
-swww-git
+hyprpaper-git
 swaylock-effects-git
 wlogout-git
 grimblast-git
@@ -43,6 +43,7 @@ swappy-git
 cliphist
 pacman-contrib-git
 parallel
+imagemagick
 ffmpeg-git
 pavucontrol-git
 pamixer

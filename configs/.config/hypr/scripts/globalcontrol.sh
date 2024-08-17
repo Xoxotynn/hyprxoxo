@@ -3,8 +3,8 @@
 # wallpaper var
 EnableWallDcol=0
 ConfDir="$HOME/.config"
-ThemeCtl="$ConfDir/swww/wall.ctl"
-cacheDir="$ConfDir/swww/.cache"
+ThemeCtl="$ConfDir/hypr/hyprpaper/wallpapers.ctl"
+cacheDir="$ConfDir/hypr/hyprpaper/.wpCache"
 
 # theme var
 gtkTheme=`gsettings get org.gnome.desktop.interface gtk-theme | sed "s/'//g"`

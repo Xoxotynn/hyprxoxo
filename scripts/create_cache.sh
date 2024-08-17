@@ -9,16 +9,16 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-if ! pkg_installed imagemagick || ! pkg_installed parallel 
+if ! pkg_installed imagemagick || ! pkg_installed parallel
 then
-    echo "ERROR : dependency failed, imagemagick/parallel is not installed..."
+    echo "ERROR : dependency failed, imagemagick and parallel must be installed..."
     exit 0
 fi
 
 # set variables
-ctlFile="$HOME/.config/swww/wall.ctl"
-ctlLine=`grep '^1|' $ctlFile`
-export CacheDir="$HOME/.config/swww/.cache"
+ctlFile="$HOME/.config/hypr/hyprpaper/wallpapers.ctl"
+ctlLiSne=`grep '^1|' $ctlFile`
+export CacheDir="$HOME/.config/hypr/hyprpaper/.wpCache"
 
 # evaluate options
 while getopts "fc" option ; do
@@ -26,28 +26,10 @@ while getopts "fc" option ; do
     f ) # force remove cache
         rm -Rf ${CacheDir}
         echo "Cache dir ${CacheDir} cleared...";;
-    c ) # use custom wallpaper
-        shift $((OPTIND -1))
-        inWall="$1"
-        if [[ "${inWall}" == '~'* ]]; then
-            inWall="$HOME${inWall:1}"
-        fi
-        if [[ -f "${inWall}" ]] ; then
-            if [ `echo "$ctlLine" | wc -l` -eq "1" ] ; then
-                curTheme=$(echo "$ctlLine" | cut -d '|' -f 2)
-                sed -i "/^1|/c\1|${curTheme}|${inWall}" "$ctlFile"
-            else
-                echo "ERROR : $ctlFile Unable to fetch theme..."
-                exit 1
-            fi
-        else
-            echo "ERROR: wallpaper $1 not found..."
-            exit 1
-        fi ;;
+
     * ) # invalid option
-        echo "...valid options are..."   
+        echo "...valid options are..."
     	echo "./scripts/create_cache.sh -f                      # force create thumbnails (delete old cache)"
-        echo "./scripts/create_cache.sh -c /path/to/wallpaper   # generate cache for custom walls"
         exit 1 ;;
     esac
 done
@@ -55,23 +37,23 @@ done
 # magick function
 imagick_t2 () {
     theme="$1"
-    wpFullName="$2"
-    wpBaseName=$(basename "${wpFullName}")
+    wpFullPath="$2"
+    wpName=$(basename ${wpFullPath})
 
-    if [ ! -f "${CacheDir}/${theme}/${wpBaseName}" ]; then
-        convert "${wpFullName}" -thumbnail 500x500^ -gravity center -extent 500x500 "${CacheDir}/${theme}/${wpBaseName}"
+    if [ ! -f "${CacheDir}/${theme}/${wpName}" ]; then
+        magick "${wpFullPath}" -thumbnail 500x500^ -gravity center -extent 500x500 "${CacheDir}/${theme}/${wpName}"
     fi
 
-    if [ ! -f "${CacheDir}/${theme}/${wpBaseName}.rofi" ]; then
-        convert -strip -resize 2000 -gravity center -extent 2000 -quality 90 "${wpFullName}" "${CacheDir}/${theme}/${wpBaseName}.rofi"
+    if [ ! -f "${CacheDir}/${theme}/${wpName}.rofi" ]; then
+        magick "${wpFullPath}" -strip -resize 2000 -gravity center -extent 2000 -quality 90 "${CacheDir}/${theme}/${wpName}.rofi"
     fi
 
-    if [ ! -f "${CacheDir}/${theme}/${wpBaseName}.blur" ]; then
-        convert -strip -scale 10% -blur 0x3 -resize 100% "${wpFullName}" "${CacheDir}/${theme}/${wpBaseName}.blur"
+    if [ ! -f "${CacheDir}/${theme}/${wpName}.blur" ]; then
+        magick "${wpFullPath}" -strip -scale 10% -blur 0x3 -resize 100% "${CacheDir}/${theme}/${wpName}.blur"
     fi
 
-    if [ ! -f "${CacheDir}/${theme}/${wpBaseName}.dcol" ]; then
-        magick "${wpFullName}" -colors 4 -define histogram:unique-colors=true -format "%c" histogram:info: > "${CacheDir}/${theme}/${wpBaseName}.dcol"
+    if [ ! -f "${CacheDir}/${theme}/${wpName}.dcol" ]; then
+        magick "${wpFullPath}" -colors 4 -define histogram:unique-colors=true -format "%c" histogram:info: > "${CacheDir}/${theme}/${wpName}.dcol"
     fi
 }
 
@@ -80,7 +62,7 @@ export -f imagick_t2
 while read ctlLine
 do
     theme=$(echo $ctlLine | cut -d '|' -f 2)
-    fullPath=$(echo "$ctlLine" | cut -d '|' -f 3 | sed "s+~+$HOME+")
+    fullPath=$(echo "$ctlLine" | cut -d '|' -f 3 | sed "s|~|$HOME|")
     wallPath=$(dirname "$fullPath")
     mkdir -p ${CacheDir}/${theme}
     mapfile -d '' wpArray < <(find "${wallPath}" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) -print0 | sort -z)

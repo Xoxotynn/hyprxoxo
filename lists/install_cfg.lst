@@ -11,7 +11,6 @@ ${HOME}/.config|Kvantum|kvantum
 ${HOME}/.config|neofetch|neofetch
 ${HOME}/.config|rofi|rofi
 ${HOME}/.config|swaylock|swaylock-effects
-${HOME}/.config|swww|swww
 ${HOME}/.config|waybar|waybar
 ${HOME}/.config|wlogout|wlogout
 ${HOME}/.icons|default|nwg-look
