@@ -31,7 +31,7 @@ xdg-desktop-portal-hyprland-git
 sddm-git
 hyprland-git
 hyprshade-git
-dunst-git
+dunst
 rofi-lbonn-wayland-git
 waybar-git
 hyprpaper-git

@@ -63,8 +63,16 @@
     # Corner radius for the progress bar. 0 disables rounded corners.
     progress_bar_corner_radius = 4
 
+    # Define which corners to round when drawing the progress bar. If progress_bar_corner_radius
+    # is set to 0 this option will be ignored.
+    progress_bar_corners = all
+
     # Corner radius for the icon image.
     icon_corner_radius = 5
+
+    # Define which corners to round when drawing the icon image. If icon_corner_radius
+    # is set to 0 this option will be ignored.
+    icon_corners = all
 
     # Show how many messages are currently hidden (because of
     # notification_limit).
@@ -251,6 +259,13 @@
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
     corner_radius = 10
+
+    # Define which corners to round when drawing the window. If the corner radius
+    # is set to 0 this option will be ignored.
+    #
+    # Comma-separated list of the corners. The accepted corner values are bottom-right,
+    # bottom-left, top-right, top-left, top, bottom, left, right or all.
+    corners = all
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -439,7 +454,8 @@
 
 [Type-2]
     summary = "t2"
-    format = "<span size="250%">%a</span>\n%b"
+    format = "<span size='250%'>%a</span>\n%b"
+    max_icon_size = 40
 
 [urgency_critical]
     background = "#f5e0dc"
@@ -454,12 +470,12 @@
     background = "#566083"
     foreground = "#665679"
     frame_color = "#665679"
-    icon = "~/.config/dunst/icons/hyprdots.svg"
+    icon = "~/.config/dunst/icons/arch.svg"
     timeout = 10
 
 [urgency_normal]
     background = "#181D2D"
     foreground = "#CD758A"
     frame_color = "#CD758A"
-    icon = "~/.config/dunst/icons/hyprdots.svg"
+    icon = "~/.config/dunst/icons/arch.svg"
     timeout = 10

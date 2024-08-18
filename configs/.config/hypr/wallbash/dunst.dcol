@@ -4,12 +4,12 @@
     background = "<dcol_1>"
     foreground = "<dcol_2>"
     frame_color = "<dcol_2>"
-    icon = "~/.config/dunst/icons/hyprdots.svg"
+    icon = "~/.config/dunst/icons/arch.svg"
     timeout = 10
 
 [urgency_normal]
     background = "<dcol_0>"
     foreground = "<dcol_3>"
     frame_color = "<dcol_3>"
-    icon = "~/.config/dunst/icons/hyprdots.svg"
+    icon = "~/.config/dunst/icons/arch.svg"
     timeout = 10
