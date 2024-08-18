@@ -1,6 +1,6 @@
 ${HOME}|.zshrc .p10k.zsh|zsh
 ${HOME}|.gtkrc-2.0|nwg-look
-${HOME}|.vimrc .vim|vim
+${HOME}|.vimrc .vim|gvim
 ${HOME}/.config|alacritty|alacritty-git
 ${HOME}/.config|btop|btop
 ${HOME}/.config|Code|visual-studio-code-bin
