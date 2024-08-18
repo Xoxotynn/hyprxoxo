@@ -211,7 +211,7 @@
     # Set icon theme (only used for recursive icon lookup)
     #icon_theme = Adwaita
     # You can also set multiple icon themes, with the leftmost one being used first.
-    icon_theme = "Tela-circle-dracula"
+    icon_theme = "Tela-circle-black"
 
     # Align icons left/right/top/off
     icon_position = left
@@ -225,7 +225,7 @@
     max_icon_size = 128
 
     # Paths to default icons (only neccesary when not using recursive icon lookup)
-    icon_path = /usr/share/icons/Tela-circle-dracula/16/actions:/usr/share/icons/Tela-circle-dracula/16/apps:/usr/share/icons/Tela-circle-dracula/16/devices:/usr/share/icons/Tela-circle-dracula/16/mimetypes:/usr/share/icons/Tela-circle-dracula/16/panel:/usr/share/icons/Tela-circle-dracula/16/places:/usr/share/icons/Tela-circle-dracula/16/status
+    icon_path = /usr/share/icons/Tela-circle-black/16/actions:/usr/share/icons/Tela-circle-black/16/apps:/usr/share/icons/Tela-circle-black/16/devices:/usr/share/icons/Tela-circle-black/16/mimetypes:/usr/share/icons/Tela-circle-black/16/panel:/usr/share/icons/Tela-circle-black/16/places:/usr/share/icons/Tela-circle-black/16/status
 
     ### History ###
 
