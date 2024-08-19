@@ -13,4 +13,5 @@ ${HOME}/.config|rofi|rofi
 ${HOME}/.config|swaylock|swaylock-effects
 ${HOME}/.config|waybar|waybar
 ${HOME}/.config|wlogout|wlogout
+${HOME}/.config|qtfm6|qtfm
 ${HOME}/.icons|default|nwg-look

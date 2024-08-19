@@ -170,6 +170,7 @@ QT_QPA_PLATFORM=xcb ./AmneziaVPN_Linux_Installer.bin
     <tr><td>alacritty</td><td>terminal</td></tr>
     <tr><td>neofetch</td><td>fetch tool</td></tr>
     <tr><td>btop</td><td>system monitor</td></tr>
+    <tr><td>qtfm</td><td>file manager</td></tr>
     <tr><td>visual-studio-code-bin</td><td>gui code editor</td></tr>
     <tr><td>vim</td><td>text editor</td></tr>
     <tr><td>notion-app-electron</td><td>notes</td></tr>
@@ -203,6 +204,7 @@ QT_QPA_PLATFORM=xcb ./AmneziaVPN_Linux_Installer.bin
 ### <code>Apps</code>
 <table>
     <tr><td><kbd>Super</kbd> + <kbd>T</kbd></td><td>launch alacritty terminal</td></tr>
+    <tr><td><kbd>Super</kbd> + <kbd>E</kbd></td><td>launch file manager</td></tr>
     <tr><td><kbd>Super</kbd> + <kbd>C</kbd></td><td>launch vscode</td></tr>
     <tr><td><kbd>Super</kbd> + <kbd>Y</kbd></td><td>launch yandex browser</td></tr>
 </table>
