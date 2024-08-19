@@ -4,6 +4,9 @@ set mouse=a
 "syntax highlight"
 syntax on
 
+"enable syntax in conf files"
+au BufNewFile,BufRead *.conf setf dosini
+
 "line numbers"
 set number
 
