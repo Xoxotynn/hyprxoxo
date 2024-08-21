@@ -10,7 +10,6 @@ ${HOME}/.config|hypr|hyprland-git
 ${HOME}/.config|Kvantum|kvantum
 ${HOME}/.config|neofetch|neofetch
 ${HOME}/.config|rofi|rofi
-${HOME}/.config|swaylock|swaylock-effects
 ${HOME}/.config|waybar|waybar
 ${HOME}/.config|wlogout|wlogout
 ${HOME}/.config|qtfm6|qtfm

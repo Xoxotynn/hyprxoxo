@@ -95,7 +95,7 @@ QT_QPA_PLATFORM=xcb ./AmneziaVPN_Linux_Installer.bin
 
 ### <code>nvidia</code>
 <table>
-    <tr><td>linux-[zen|lts]-headers</td><td>for main kernel (script will auto detect from /usr/lib/modules/)</td></tr>
+    <tr><td>linux-headers</td><td>headers for main kernel</td></tr>
     <tr><td>nvidia-all</td><td>nvidia drivers</td></tr>
 </table>
 
@@ -113,7 +113,6 @@ QT_QPA_PLATFORM=xcb ./AmneziaVPN_Linux_Installer.bin
     <tr><td>bluez-utils</td><td>for bluetooth</td></tr>
     <tr><td>blueman</td><td>bt tray</td></tr>
     <tr><td>dnscrypt-proxy</td><td>encrypting/proxying dns requests</td></tr>
-    <tr><td>imv</td><td>image viewer</td></tr>
 </table>
 
 ### <code>login</code>
@@ -131,7 +130,7 @@ QT_QPA_PLATFORM=xcb ./AmneziaVPN_Linux_Installer.bin
     <tr><td>rofi-lbonn-wayland-git</td><td>app launcher</td></tr>
     <tr><td>waybar</td><td>status bar</td></tr>
     <tr><td>hyprpaper</td><td>wallpaper app</td></tr>
-    <tr><td>swaylock-effects-git</td><td>lockscreen</td></tr>
+    <tr><td>hyprlock</td><td>lockscreen</td></tr>
     <tr><td>wlogout</td><td>logout screen</td></tr>
     <tr><td>grimblast-git</td><td>screenshot tool</td></tr>
     <tr><td>slurp</td><td>selects region for screenshot/screenshare</td></tr>
