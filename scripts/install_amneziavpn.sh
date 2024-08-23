@@ -21,8 +21,14 @@ curl -s https://api.github.com/repos/amnezia-vpn/amnezia-client/releases/latest 
   xargs curl -L -O
 
 # extract installer
-mkdir installers
-rm installers/AmneziaVPN_Linux_Installer.bin
+if [ ! -d ./installers ]; then
+  mkdir installers
+fi
+
+if [ -z "$( ls -A './installers' )" ]; then
+  rm -rf ./installers/*
+fi
+
 7z e $(ls -1 | grep AmneziaVPN)
 tar -xvf AmneziaVPN_Linux_Installer.tar -C installers
 rm $(ls -1 | grep 'AmneziaVPN.*zip$') AmneziaVPN_Linux_Installer.tar

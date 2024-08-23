@@ -63,7 +63,7 @@ if [ -z "$aurhlpr" ]; then
 fi
 
 # install nvidia drivers
-if ! pkg_installed nvidia-open-dkms-tkg; then
+if ! pkg_installed nvidia-open-dkms-tkg && ! pkg_installed nvidia; then
   rm -rf $GitPkgDir/nvidia-all
   git clone https://github.com/Frogging-Family/nvidia-all.git $GitPkgDir/nvidia-all/
   cd $GitPkgDir/nvidia-all
