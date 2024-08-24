@@ -39,7 +39,7 @@ if pkg_installed grub; then
     sudo cp /etc/default/grub /etc/default/grub.t2.bkp
     sudo tar -xzf $CloneDir/source/arcs/Grub_Pochita.tar.gz -C /usr/share/grub/themes/
 
-    sudo sed -i "/^GRUB_CMDLINE_LINUX_DEFAULT=/c\GRUB_CMDLINE_LINUX_DEFAULT=\"loglevel=3 quiet splash nvidia.NVreg_PreserveVideoMemoryAllocations=1 nvidia.NVreg_EnableGpuFirmware=0 nvidia.NVreg_RegistryDwords='PowerMizerEnable=0x1; PerfLevelSrc=0x2222; PowerMizerLevel=0x3; PowerMizerDefault=0x3; PowerMizerDefaultAC=0x3' nvidia_drm.modeset=1 nvidia_drm.fbdev=1 btusb.enable_autosuspend=n pcie_asmp.policy=performance\"" /etc/default/grub
+    sudo sed -i "/^GRUB_CMDLINE_LINUX_DEFAULT=/c\GRUB_CMDLINE_LINUX_DEFAULT=\"loglevel=3 quiet splash btusb.enable_autosuspend=n pcie_asmp.policy=performance\"" /etc/default/grub
     sudo sed -i "/^GRUB_DEFAULT=/c\GRUB_DEFAULT=saved
         /^GRUB_GFXMODE=/c\GRUB_GFXMODE=1280x1024x32,auto
         /^#GRUB_THEME=/c\GRUB_THEME=\"/usr/share/grub/themes/pochita/theme.txt\"

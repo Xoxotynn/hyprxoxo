@@ -18,8 +18,7 @@ The installation script is made for Arch, but **may** work on some Arch based di
 
 > **Warning**
 >
-> Install script will install patched nvidia drivers  
-> Nvidia drm will be enabled in grub, so please [ensure](https://wiki.archlinux.org/title/NVIDIA) your nvidia card supports dkms drivers/hyprland.
+> Install script will install AMDGPU drivers
 
 After minimal Arch install (with grub), clone and execute -
 
@@ -93,10 +92,17 @@ QT_QPA_PLATFORM=xcb ./AmneziaVPN_Linux_Installer.bin
 
 ## Packages
 
-### <code>nvidia</code>
+### <code>amd</code>
 <table>
     <tr><td>linux-headers</td><td>headers for main kernel</td></tr>
-    <tr><td>nvidia-all</td><td>nvidia drivers</td></tr>
+    <tr><td>mesa</td><td>amd drivers</td></tr>
+    <tr><td>lib32-mesa</td><td>amd drivers</td></tr>
+    <tr><td>vulkan-radeon</td><td>amd vulkan drivers</td></tr>
+    <tr><td>lib32-vulkan-radeon</td><td>amd vulkan drivers</td></tr>
+    <tr><td>libva-mesa-driver</td><td>amd VA-API</td></tr>
+    <tr><td>lib32-libva-mesa-driver</td><td>amd VA-API</td></tr>
+    <tr><td>mesa-vdpau</td><td>amd VDPAU</td></tr>
+    <tr><td>lib32-mesa-vdpau</td><td>amd VDPAU</td></tr>
 </table>
 
 ### <code>utils</code>

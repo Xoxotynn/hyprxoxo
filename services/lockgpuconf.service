@@ -1,9 +1,0 @@
-[Unit]
-Description=Script to lock gpu clocks on boot at 1305 Mhz max
- 
-[Service]
-Type=oneshot
-ExecStart=/usr/bin/lockgpuclock
- 
-[Install]
-WantedBy=multi-user.target

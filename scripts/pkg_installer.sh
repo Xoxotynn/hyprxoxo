@@ -62,16 +62,6 @@ if [ -z "$aurhlpr" ]; then
   ./scripts/install_aur.sh "$aurhlpr" 2>&1
 fi
 
-# install nvidia drivers
-if ! pkg_installed nvidia-open-dkms-tkg && ! pkg_installed nvidia; then
-  rm -rf $GitPkgDir/nvidia-all
-  git clone https://github.com/Frogging-Family/nvidia-all.git $GitPkgDir/nvidia-all/
-  cd $GitPkgDir/nvidia-all
-  makepkg -si
-else
-  echo "nvidia-all already installed, skipping"
-fi
-
 # install packages from install_pkg.lst
 install_list="${1:-./lists/install_pkg.lst}"
 

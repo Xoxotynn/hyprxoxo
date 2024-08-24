@@ -67,3 +67,11 @@ dnscrypt-proxy
 ttf-nerd-fonts-symbols-mono
 tela-circle-icon-theme-black
 tela-circle-icon-theme-grey
+mesa
+lib32-mesa
+vulkan-radeon
+lib32-vulkan-radeon
+libva-mesa-driver
+lib32-libva-mesa-driver
+mesa-vdpau
+lib32-mesa-vdpau
