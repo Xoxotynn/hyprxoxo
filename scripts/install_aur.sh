@@ -37,7 +37,7 @@ fi
 
 # install aur helper
 cd $GitPkgDir/$aurhlpr || exit
-makepkg ${use_default} -sric
+makepkg ${use_default} -si
 
 # check if aur helper is installed
 if [ $? -eq 0 ]; then
@@ -55,7 +55,7 @@ $aurhlpr ${use_default} -S "${aurhlpr}-git"
 
 if pkg_installed "${aurhlpr}-git"; then
   echo "${aurhlpr}-git installed"
-  rm -rf $GitPkgDir/$aurhlpr
+  sudo rm -rf $GitPkgDir/$aurhlpr
   $aurhlpr -Rs ${aurhlpr}-debug ${aurhlpr}-git-debug
   exit 0
 else
