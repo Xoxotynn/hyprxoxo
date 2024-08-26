@@ -1,4 +1,4 @@
 NetworkManager
+systemd-resolved
 bluetooth
 sddm
-dnscrypt-proxy

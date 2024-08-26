@@ -10,6 +10,7 @@ network-manager-applet
 bluez
 blueman
 qt5ct
+qt5-wayland
 qt5-quickcontrols
 qt5-quickcontrols2
 qt5-graphicaleffects
@@ -63,7 +64,6 @@ qtfm
 qbittorrent
 steam
 telegram-desktop
-dnscrypt-proxy
 ttf-nerd-fonts-symbols-mono
 tela-circle-icon-theme-black
 tela-circle-icon-theme-grey
@@ -75,3 +75,5 @@ libva-mesa-driver
 lib32-libva-mesa-driver
 mesa-vdpau
 lib32-mesa-vdpau
+dosfstools
+ntfs-3g
