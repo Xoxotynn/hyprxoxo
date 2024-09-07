@@ -75,5 +75,6 @@ libva-mesa-driver
 lib32-libva-mesa-driver
 mesa-vdpau
 lib32-mesa-vdpau
+rocm-smi-lib
 dosfstools
 ntfs-3g
