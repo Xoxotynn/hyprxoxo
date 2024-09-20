@@ -7,6 +7,7 @@ pipewire-pulse
 wireplumber
 networkmanager
 network-manager-applet
+dhcpcd
 bluez
 blueman
 qt5ct
@@ -78,3 +79,7 @@ lib32-mesa-vdpau
 rocm-smi-lib
 dosfstools
 ntfs-3g
+speedtest-cli
+mangohud
+lib32-mangohud
+goverlay

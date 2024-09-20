@@ -1,4 +1,4 @@
 NetworkManager
-systemd-resolved
+dhcpcd
 bluetooth
 sddm
