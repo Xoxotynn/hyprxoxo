@@ -59,11 +59,9 @@ gvim
 zsh
 lsd
 fzf
-notion-app-electron
 p7zip
 qtfm
 qbittorrent
-steam
 telegram-desktop
 ttf-nerd-fonts-symbols-mono
 tela-circle-icon-theme-black
@@ -77,9 +75,4 @@ lib32-libva-mesa-driver
 mesa-vdpau
 lib32-mesa-vdpau
 rocm-smi-lib
-dosfstools
 ntfs-3g
-speedtest-cli
-mangohud
-lib32-mangohud
-goverlay
